@@ -1,0 +1,16 @@
+<div class="appbar">
+  <h4>{{user.username}} / {{name}}</h4>
+</div>
+<ul id="sidebar">
+  {{~#link-to 'app.controls'}}<li data-title="Controls"><i class="fa fa-fw fa-anchor"></i></li>{{/link-to ~}}
+  {{~#link-to 'app.metrics'}}<li data-title="Metrics"><i class="fa fa-fw fa-bar-chart-o"></i></li>{{/link-to ~}}
+  {{~#link-to 'app.services'}}<li data-title="Services"><i class="fa fa-fw fa-suitcase"></i></li>{{/link-to ~}}
+  {{~#link-to 'app.env'}}<li data-title="Environment"><i class="fa fa-fw fa-sliders"></i></li>{{/link-to ~}}
+  {{~#link-to 'app.logs'}}<li data-title="Logs"><i class="fa fa-fw fa-align-left"></i></li>{{/link-to ~}}
+  {{~#link-to 'app.domains'}}<li data-title="Domains"><i class="fa fa-fw fa-globe"></i></li>{{/link-to ~}}
+  {{~#link-to 'app.ssl'}}<li data-title="SSL"><i class="fa fa-fw fa-lock"></i></li>{{/link-to ~}}
+  {{~#link-to 'app.settings'}}<li data-title="Setings"><i class="fa fa-fw fa-cogs"></i></li>{{/link-to ~}}
+</ul>
+<div id="main">
+  {{outlet}}
+</div>

@@ -1,0 +1,7 @@
+<ul class="apps">
+{{#each}}
+  <li>{{#link-to 'app' this}}{{name}}{{/link-to}}</li>
+{{/each}}
+</ul>
+
+{{#link-to 'apps.new'}}Add new app{{/link-to}}
